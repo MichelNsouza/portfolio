@@ -6,6 +6,26 @@
     ],
     "routes": [
         {
+            "src": "/",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/dashboard",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/profile",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/profile/*",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/store",
+            "dest": "/api/index.php"
+        },
+        {
             "src": "/img/icons/(.*)",
             "dest": "public/img/icons/$1"
         },
