@@ -6,32 +6,12 @@
     ],
     "routes": [
         {
-            "src": "/css/(.*)",
-            "dest": "public/css/$1"
+            "src": "/(css|js|img|uploads)/(.*)",
+            "dest": "public/$1/$2/$3"
         },
         {
-            "src": "/img/(.*)",
-            "dest": "public/img/$1"
-        },
-        {
-            "src": "/uploads/(.*)",
-            "dest": "public/uploads/$1"
-        },
-        {
-            "src": "/",
-            "dest": "public/index.php"
-        },
-        {
-            "src": "/dashboard",
-            "dest": "public/index.php"
-        },
-        {
-            "src": "/profile",
-            "dest": "public/index.php"
-        },
-        {
-            "src": "/store",
-            "dest": "public/index.php"
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ],
     "env": {
