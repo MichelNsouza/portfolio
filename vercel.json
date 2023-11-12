@@ -6,8 +6,20 @@
     ],
     "routes": [
         {
-            "src": "/(css|js|img|uploads)/(.*)",
-            "dest": "public/$1/$2/$3"
+            "src": "/img/icons/(.*)",
+            "dest": "public/img/icons/$1"
+        },
+        {
+            "src": "/uploads/(.*)",
+            "dest": "public/uploads/$1"
+        },
+        {
+            "src": "/(css|js)/(.*)",
+            "dest": "public/$1/$2"
+        },
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/index.php"
         },
         {
             "src": "/(.*)",
@@ -27,3 +39,4 @@
         "SESSION_DRIVER": "cookie"
     }
 }
+
